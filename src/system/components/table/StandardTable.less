@@ -1,0 +1,32 @@
+.standard-table-header{
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: row;
+  align-items: center;
+  .standard-table-header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .standard-table-header-right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-grow: 1;
+  }.standard-table-header-alert{
+    padding: 0 35px;
+    line-height: 30px;
+    margin-right: 10px;
+    .standard-table-header-message{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &>a{
+        margin: 0 5px;
+      }
+    }
+    .ant-alert-icon{
+      top: 7.5px;
+    }
+  }
+}

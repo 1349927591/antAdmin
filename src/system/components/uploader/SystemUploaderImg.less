@@ -1,0 +1,77 @@
+.demo-upload-list {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin-right: 4px;
+}
+
+.demo-upload-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.demo-upload-list-cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.demo-upload-list:hover .demo-upload-list-cover {
+  display: block;
+}
+
+.demo-upload-list-cover i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.uploader {
+  display: flex;
+  .ivu-upload {
+    input {
+      display: block;
+      opacity: 0;
+      width: 58px;
+      height: 58px;
+      position: absolute;
+      left: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999 !important;
+  .ivu-modal {
+    top: 0;
+    left: 0;
+  }
+}
+
+.ivu-upload-drag {
+  background: #fff;
+  border: 1px dashed #dddee1;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: border-color .2s ease;
+}

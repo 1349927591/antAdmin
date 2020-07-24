@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: #001529 url(../../../../static/img/login-background.svg) no-repeat center 110px;
+  background-size: 100%;
+  .content {
+    padding: 32px 0;
+    flex: 1;
+    @media (min-width: 768px) {
+      padding: 112px 0 24px;
+    }
+    .top {
+      text-align: center;
+      .header {
+        height: 50px;
+        line-height: 50px;
+        a {
+          text-decoration: none;
+        }
+        .logo {
+          height: 50px;
+          vertical-align: top;
+          margin-right: 10px;
+        }
+        .title {
+          font-size: 28px;
+          // color: rgba(0, 0, 0, .85);
+          color: #FFFFFF;
+          font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          font-weight: 600;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .desc {
+        font-size: 14px;
+        color: rgba(255, 255, 255, .45);
+        margin-top: 12px;
+        margin-bottom: 40px;
+      }
+    }
+    .login {
+      width: 400px;
+      margin: 0 auto;
+      border-radius: 8px;
+      padding: 30px;
+      background-color: #fbfbfb;
+
+      @media screen and (max-width: 576px) {
+        width: 95%;
+      }
+      .ant-tabs-bar{
+        margin-bottom: 40px;
+      }
+
+      .icon {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.2);
+        margin-left: 16px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #1890ff;
+        }
+      }
+    }
+    .footer {
+      .links {
+        a{
+          color: #5b7fa0;
+        }
+      }
+      .copyright{
+        color: rgba(255, 255, 255, .45);        
+      }
+    }
+  }
+}
